@@ -9,3 +9,15 @@
   border-radius: 50%;
   font-weight: 600;
 }
+
+.badge-dot {
+  background-color: tomato;
+  width: 7px;
+  height: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  border-radius: 50%;
+  font-weight: 600;
+}
