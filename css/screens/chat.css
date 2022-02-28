@@ -33,9 +33,9 @@
   margin-bottom: 25px;
 }
 
-@keyframes fadeIn {
+@keyframes fadeInLeft {
   from {
-    transform: translateY(30px);
+    transform: translateX(-30px);
     opacity: 0;
   }
   to {
@@ -48,7 +48,7 @@
   width: 100%;
   display: flex;
   margin-bottom: 25px;
-  animation: fadeIn 0.8s linear;
+  animation: fadeInLeft 0.8s linear;
 }
 
 .message-row img {
@@ -83,8 +83,20 @@
   font-size: 14px;
 }
 
+@keyframes fadeInRight {
+  from {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .message-row--own {
   justify-content: flex-end;
+  animation: fadeInRight 0.8s linear;
 }
 
 .message-row--own .message__bubble {
